@@ -28,28 +28,28 @@ Kurumsal yapının yönetilebilirliğini artırmak ve Group Policy Objelerini (G
 - **BURSA -> YONETIM (OU):** Bursa Şubesi Yönetim Birimi (BursaYönetim Grubu, by1, by2 kullanıcıları)
 - **BURSA Bölge Yöneticisi:** Bursa bölgesi yerel yöneticisi (bursaadmin)
 
-![Active Directory Users and Computers (ADUC) - ANKARA OU ve Bölge Yöneticileri](1.png)
+![Active Directory Users and Computers (ADUC) - ANKARA OU ve Bölge Yöneticileri](screenshots/1.png)
 *Görsel 2.1: Active Directory Users and Computers (ADUC) - ANKARA OU ve Bölge Yöneticileri*
 
-![ANKARA -> SATIS OU Kullanıcıları ve AnkaraSatis Güvenlik Grubu](2.png)
+![ANKARA -> SATIS OU Kullanıcıları ve AnkaraSatis Güvenlik Grubu](screenshots/2.png)
 *Görsel 2.2: ANKARA -> SATIS OU Kullanıcıları ve AnkaraSatis Güvenlik Grubu*
 
-![ANKARA -> YONETIM OU Kullanıcıları ve AnkaraYonetim Güvenlik Grubu](3.png)
+![ANKARA -> YONETIM OU Kullanıcıları ve AnkaraYonetim Güvenlik Grubu](screenshots/3.png)
 *Görsel 2.3: ANKARA -> YONETIM OU Kullanıcıları ve AnkaraYonetim Güvenlik Grubu*
 
-![BURSA OU Genel Yapısı ve bursaadmin Kullanıcısı](4.png)
+![BURSA OU Genel Yapısı ve bursaadmin Kullanıcısı](screenshots/4.png)
 *Görsel 2.4: BURSA OU Genel Yapısı ve bursaadmin Kullanıcısı*
 
-![BURSA -> SATIS OU Kullanıcıları ve BursaSatış Güvenlik Grubu](5.png)
+![BURSA -> SATIS OU Kullanıcıları ve BursaSatış Güvenlik Grubu](screenshots/5.png)
 *Görsel 2.5: BURSA -> SATIS OU Kullanıcıları ve BursaSatış Güvenlik Grubu*
 
-![BURSA -> YONETIM OU Kullanıcıları ve BursaYönetim Güvenlik Grubu](6.png)
+![BURSA -> YONETIM OU Kullanıcıları ve BursaYönetim Güvenlik Grubu](screenshots/6.png)
 *Görsel 2.6: BURSA -> YONETIM OU Kullanıcıları ve BursaYönetim Güvenlik Grubu*
 
-![BILGISAYARLAR OU - Domain Üyesi İstemci Bilgisayarlar (SERVER-2)](7.png)
+![BILGISAYARLAR OU - Domain Üyesi İstemci Bilgisayarlar (SERVER-2)](screenshots/7.png)
 *Görsel 2.7: BILGISAYARLAR OU - Domain Üyesi İstemci Bilgisayarlar (SERVER-2)*
 
-![Domain Controllers OU - DC1 ve ADDC Yapısı](8.png)
+![Domain Controllers OU - DC1 ve ADDC Yapısı](screenshots/8.png)
 *Görsel 2.8: Domain Controllers OU - DC1 ve ADDC Yapısı*
 
 ---
@@ -60,10 +60,10 @@ Principle of Least Privilege (En Az Yetki Prensibi) doğrultusunda, Domain Admin
 
 Ankara OU'su üzerinde `ankaraadmin1` kullanıcısına nesne oluşturma, silme ve yönetme yetkisi devredilmiştir. Böylece şube yöneticileri yalnızca kendi bölgelerindeki kullanıcı ve grupları yönetebilirken, ana domain yapısının güvenliği korunmuştur.
 
-![Delegation of Control Wizard - Yetki Devredilecek Kullanıcı Seçimi (ankaraadmin1)](9.png)
+![Delegation of Control Wizard - Yetki Devredilecek Kullanıcı Seçimi (ankaraadmin1)](screenshots/9.png)
 *Görsel 3.1: Delegation of Control Wizard - Yetki Devredilecek Kullanıcı Seçimi (ankaraadmin1)*
 
-![Delegation of Control Wizard - Özelleştirilmiş Yetki Atamaları (Full Control, Read/Write)](10.png)
+![Delegation of Control Wizard - Özelleştirilmiş Yetki Atamaları (Full Control, Read/Write)](screenshots/10.png)
 *Görsel 3.2: Delegation of Control Wizard - Özelleştirilmiş Yetki Atamaları (Full Control, Read/Write)*
 
 ---
@@ -74,7 +74,7 @@ Güvenlik politikaları gereği, belirli personellerin (örneğin `as2` kullanı
 
 Kullanıcı Özellikleri (User Properties) -> Account -> Logon Hours sekmesinden Pazar günleri ve mesai dışı saatlerde logon hakları kısıtlanarak 'Logon Denied' olarak ayarlanmıştır.
 
-![as2 Kullanıcısı İçin Logon Hours Yapılandırması (Erişim Kısıtlamaları)](11.png)
+![as2 Kullanıcısı İçin Logon Hours Yapılandırması (Erişim Kısıtlamaları)](screenshots/11.png)
 *Görsel 4.1: as2 Kullanıcısı İçin Logon Hours Yapılandırması (Erişim Kısıtlamaları)*
 
 ---
@@ -87,16 +87,16 @@ Sisteme giriş yapmaya çalışan tüm kullanıcılara yasal sorumluluk ve karş
 - **Interactive logon: Message title for users attempting to log on:** MERHABA
 - **Interactive logon: Message text for users attempting to log on:** ŞİRKETİMİZE HOŞ GELDİNİZ. YETKİSİZ İŞLEMLER KAYIT ALTINA ALINACAKTIR.
 
-![Group Policy Management Editor - Security Options Politika Yapılandırması](12.png)
+![Group Policy Management Editor - Security Options Politika Yapılandırması](screenshots/12.png)
 *Görsel 5.1: Group Policy Management Editor - Security Options Politika Yapılandırması*
 
-![Message Title Ayarı ('MERHABA')](13.png)
+![Message Title Ayarı ('MERHABA')](screenshots/13.png)
 *Görsel 5.2: Message Title Ayarı ('MERHABA')*
 
-![Message Text Ayarı ('ŞİRKETİMİZE HOŞ GELDİNİZ. YETKİSİZ İŞLEMLER KAYIT ALTINA ALINACAKTIR.')](14.png)
+![Message Text Ayarı ('ŞİRKETİMİZE HOŞ GELDİNİZ. YETKİSİZ İŞLEMLER KAYIT ALTINA ALINACAKTIR.')](screenshots/14.png)
 *Görsel 5.3: Message Text Ayarı ('ŞİRKETİMİZE HOŞ GELDİNİZ. YETKİSİZ İŞLEMLER KAYIT ALTINA ALINACAKTIR.')*
 
-![İstemci Tarafında Oturum Açma Öncesi Görüntülenen İnteraktif Uyarı Ekranı](15.png)
+![İstemci Tarafında Oturum Açma Öncesi Görüntülenen İnteraktif Uyarı Ekranı](screenshots/15.png)
 *Görsel 5.4: İstemci Tarafında Oturum Açma Öncesi Görüntülenen İnteraktif Uyarı Ekranı*
 
 ---
@@ -108,16 +108,16 @@ Kullanıcılar domain cihazlarına giriş yaptıklarında bulundukları şubeye 
 - **Ankara Şubesi VBScript (Ankara Script):** `msgbox "Ankara Subemize Hosgeldiniz."`
 - **Bursa Şubesi VBScript (Bursa Script):** `msgbox "Bursa Subemize Hosgeldiniz."`
 
-![Ankara Şubesi İçin Hazırlanan VBScript Kod Yapısı](16.png)
+![Ankara Şubesi İçin Hazırlanan VBScript Kod Yapısı](screenshots/16.png)
 *Görsel 6.1: Ankara Şubesi İçin Hazırlanan VBScript Kod Yapısı*
 
-![Bursa Şubesi İçin Hazırlanan VBScript Kod Yapısı](17.png)
+![Bursa Şubesi İçin Hazırlanan VBScript Kod Yapısı](screenshots/17.png)
 *Görsel 6.2: Bursa Şubesi İçin Hazırlanan VBScript Kod Yapısı*
 
-![Ankara Şubesi Kullanıcı Oturumunda Çalışan Karşılama Mesajı](18.png)
+![Ankara Şubesi Kullanıcı Oturumunda Çalışan Karşılama Mesajı](screenshots/18.png)
 *Görsel 6.3: Ankara Şubesi Kullanıcı Oturumunda Çalışan Karşılama Mesajı*
 
-![Bursa Şubesi Kullanıcı Oturumunda Çalışan Karşılama Mesajı](19.png)
+![Bursa Şubesi Kullanıcı Oturumunda Çalışan Karşılama Mesajı](screenshots/19.png)
 *Görsel 6.4: Bursa Şubesi Kullanıcı Oturumunda Çalışan Karşılama Mesajı*
 
 ---
@@ -133,16 +133,16 @@ Sistem güvenliğini ve son kullanıcı standartlarını korumak için Starter G
 - **Remove the networking icon:** Enabled
 - **Remove the volume control icon:** Enabled
 
-![Starter GPO Yapılandırması ve OrtakKisitlamalar Şablonu](20.png)
+![Starter GPO Yapılandırması ve OrtakKisitlamalar Şablonu](screenshots/20.png)
 *Görsel 7.1: Starter GPO Yapılandırması ve OrtakKisitlamalar Şablonu*
 
-![OrtakKisitlamalar GPO Ayarları ve Uygulanan Politika Detayları](21.png)
+![OrtakKisitlamalar GPO Ayarları ve Uygulanan Politika Detayları](screenshots/21.png)
 *Görsel 7.2: OrtakKisitlamalar GPO Ayarları ve Uygulanan Politika Detayları*
 
-![İstemci Ekranında Engellenen İşlem Uyarısı (Restrictions Cancelled)](22.png)
+![İstemci Ekranında Engellenen İşlem Uyarısı (Restrictions Cancelled)](screenshots/22.png)
 *Görsel 7.3: İstemci Ekranında Engellenen İşlem Uyarısı (Restrictions Cancelled)*
 
-![Uygulama Engelleme Uyarısı (This app has been blocked by your system administrator)](23.png)
+![Uygulama Engelleme Uyarısı (This app has been blocked by your system administrator)](screenshots/23.png)
 *Görsel 7.4: Uygulama Engelleme Uyarısı (This app has been blocked by your system administrator)*
 
 ---
